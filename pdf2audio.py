@@ -9,7 +9,7 @@ def extractText(file_path):
     return pdf_text
 
 
-def text2mp3 (file_path , save_path,  lang ='fr'):
+def text2mp3 (file_path , save_path,  lang ='en'):
 
     pdf2text = extractText(file_path)
     tts = gTTS(text=pdf2text, lang=lang)
